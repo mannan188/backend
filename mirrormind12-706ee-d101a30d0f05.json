@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mirrormind12-706ee",
+  "private_key_id": "d101a30d0f057e1fbeb4a99f418e0761ccefcf3e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCu+s7/kn7DYs1e\ng1hWYAfnoSWqCMEdFdq9siyUmY1lQcqaDRj7xtxih27UUxakZJ+e6pTypSDr36O1\n0mXlXbIXCTyvw6KHoTE2qcqQXZ6b3G0fPHQJYC6/6b4qCAXy8oD2XI3A/8YBIzJf\nKOKkBbWeN66iYVGavE7yC3G1y0o7AEgdDiuEzN44EWOQa7FUTPMscAoFu84x9Hkw\nlFkIOUiWqr0tWdbhpRB1fbPEi3r5QOliY+JEm2DDzHUwJItMSDWvG+//CtQSAJtR\n0rPJlIVsyW9On30NYOVulxCSHIJfNID83YK8DbBT1nm18P/rBRoqmYMqgroSRLIe\njYKGZSHHAgMBAAECggEAEztHsvlD62+ZiNDAzcWCOOgSPqz1pJ+5Se4iTjbOPpnL\njcDwxQNnR4EBIl77dxgEHzBDLKQPiT0sPhig0GPK5hNC00KaQ3Po98wTkmhnvVOt\nvqgjTMCAguFK4E2/caNLn0gu4E58UbWvnJvexQ5Hltsh24D8uhgGST4Owl9UikVf\nv/sPei7IUV/y1m93y1qpO8CPipiHWN5lH3JlZNoeAVtqlispCTdPlxxVe/0HGVBl\n3b2TJVEUHb5x31obTlJMKlpjsg/FRLgOq0h2IeyDUcdtANS7+E/vYQeHj8aqJooS\ncsFP0axJOr9ZRc+WxKL3otRA0JcDevuKzRDtoyW4IQKBgQDwha1Ueg6dd1+S6LDj\nZwDKk2Eo0KB5Yj1ud7zZIEHwfrryFDfm7vlZdBVEjrOGqdSkYs7oHLF6FwZ4HFnO\nIiYMx/87YSrDPajsFElmPvdMG+fDk5nMLLLXNKP5LOLF8E6bkLOfvVCd7RgQpgZC\nIiottKCQz5ZUJTeZmTTGpOAOEQKBgQC6PWVWYDWd1A4JJr3RM/jLbk9XFy3Qg7zx\nI2j5O8DLTLw5yWx1fyaoPbkpbrDJC4W+7wox0QtLQvLayaeZ7bFWDUx4dznUdsCN\nLiR+nAquRSmBpCSwhUXBI8aAlc07lzqXGMsmc7MNh/QuziLN10tLOD36v5S3dOMY\nJNPbi4i6VwKBgDkM7C0ien79Rq05BmQaFYT3ak9dFQNVuw6N1jyGOz3JQZyUESJ0\nwq5mK3lEg+7IL8kCKuPBkpNMDNvGlcKgNPhJJBA4nwUKhhvhP/vBqbTi1Zl9VDiq\nzYzgTpiW/f9HXc3mh8S3Cf07tL6WMtvS8MBAnOlcY+L3pPWI8oy/pOmRAoGASJb1\nkJ0fSM0GS3rWMVxYdLIiKofWS5eNZU+v8rTfiF34X22q4IEWyCyGpyeFsFbVYn45\nMwGPrV4C2lQPB2gl3qyASdPurmk608xQXSjk4NgEPYuE4WiQr58KF8RLohZnt8zq\nIaqm93cuLbAa0LBBoKfjQIC7rmXYvehcyw2v1TECgYEAyWi4Z/kB3GDQylJdpamn\nxyJWqPFCTKkCFa1Z90IPvfTIT4brIqrI4jzfazn0fowJcoFtAsP+LYZMjr1kkpOD\n01I0BJ4hud0MQznUtqptjIgjbcHQQC41RqKR89K8ai6Mx9z2fKZsL65UvPwHyqlg\nLusCECupOtMJjPrcM3J4kdY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-colab-agent-creator@mirrormind12-706ee.iam.gserviceaccount.com",
+  "client_id": "109934081073004501683",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-colab-agent-creator%40mirrormind12-706ee.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
