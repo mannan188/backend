@@ -126,6 +126,24 @@ def create_df_agent_endpoint():
 
         print(f"Agent created: {agent_display_name} (ID: {agent_name_full})")
 
+        # --- NEW STEP: Set the start playbook ---
+        print(f"Attempting to set the start playbook for agent {agent_name_full}...")
+        agent_patch_url = f"https://dialogflow.googleapis.com/v3/{agent_name_full}"
+
+        agent_patch_payload = {
+            "startPlaybook": f"projects/{PROJECT_ID}/locations/global/agents/{agent_id}/playbooks/00000000-0000-0000-0000-000000000000"
+        }
+
+        patch_agent_response = requests.patch(
+            agent_patch_url,
+            headers=headers,
+            json=agent_patch_payload,
+            params={"updateMask": "start_playbook"}
+        )
+        patch_agent_response.raise_for_status()
+        print(f"Successfully set the start playbook for agent {agent_name_full}.")
+        # --- END NEW STEP ---
+
         # --- NEW STEP: Call updateGenerativeSettings to set the LLM model ---
         print(f"Attempting to set the LLM model for agent {agent_name_full} using updateGenerativeSettings...")
         generative_settings_url = f"https://dialogflow.googleapis.com/v3/{agent_name_full}/generativeSettings"
