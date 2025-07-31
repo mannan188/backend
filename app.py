@@ -126,29 +126,24 @@ def create_df_agent_endpoint():
 
         print(f"Agent created: {agent_display_name} (ID: {agent_name_full})")
 
-        # --- NEW STEP: Call updateGenerativeSettings directly to Enable Playbook Mode ---
-        print(f"Attempting to enable Playbook mode for agent {agent_name_full} using updateGenerativeSettings...")
+        # --- NEW STEP: Call updateGenerativeSettings to set the LLM model ---
+        print(f"Attempting to set the LLM model for agent {agent_name_full} using updateGenerativeSettings...")
         generative_settings_url = f"https://dialogflow.googleapis.com/v3/{agent_name_full}/generativeSettings"
         
         generative_settings_payload = {
-            "playbookConfig": {
-                "enabled": True
-            },
-            "languageCode": DEFAULT_LANGUAGE_CODE 
+            "llmModelSettings": {
+                "model": "gemini-1.0-pro"
+            }
         }
         
-        # --- FIX START ---
-        # The updateMask should now be "playbookConfig,languageCode" because we are sending the full playbookConfig object
-        # within generativeSettings, and we are also sending languageCode.
         patch_generative_settings_response = requests.patch(
             generative_settings_url, 
             headers=headers, 
             json=generative_settings_payload, 
-            params={"updateMask": "playbookConfig.enabled,languageCode"} # <--- Correct updateMask for this specific API
+            params={"updateMask": "llm_model_settings.model"}
         )
-        # --- FIX END ---
         patch_generative_settings_response.raise_for_status()
-        print(f"Successfully enabled Playbook mode for agent {agent_name_full}.")
+        print(f"Successfully set the LLM model for agent {agent_name_full}.")
         # --- END NEW STEP ---
 
         # STEP 2: Call LLM to Generate Intents AND Playbooks
